@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> I created this to automatically backup my Minecraft server. Provide the username, password, and the folder you would like to install and it will recursively download all of the files.
+> I created this to backup my Minecraft server. Provide the username, password, and the folder you would like to install and it will recursively download all of the files.
 
 ## OS
 
