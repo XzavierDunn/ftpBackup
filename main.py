@@ -2,7 +2,7 @@ import os
 import click
 import shutil
 import ftplib
-from src.service import createFolder, createFile, recur
+from src.service import recur
 
 
 @click.command()
