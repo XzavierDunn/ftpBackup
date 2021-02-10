@@ -27,7 +27,7 @@ def recur(ftp, where, localWhere, showOutput):
                 createFolder(ftp, str(os.getcwd() + '\\' + file), showOutput)
                 os.chdir(file)
                 struct[file] = recur(ftp,
-                                     str(ftp.pwd()), str(os.getcwd()), showOutput=showOutput)
+                                     str(ftp.pwd()), str(os.getcwd()), showOutput)
                 ftp.cwd('../')
                 os.chdir('..\\')
             except ftplib.error_perm:
