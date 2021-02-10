@@ -4,9 +4,9 @@
 
 > I created this to automatically backup my Minecraft server. Provide the username, password, and the folder you would like to install and it will recursively download all of the files.
 
-## Code Samples
+## OS
 
-> You've gotten their attention in the introduction, now show a few code examples. So they get a visualization and as a bonus, make them copy/paste friendly.
+> Currently only works on windows. I am missing some logic for Mac/Linux. Should come soon.
 
 ## Installation
 
