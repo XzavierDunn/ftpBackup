@@ -6,7 +6,7 @@
 
 ## OS
 
-> Currently only works on windows. I am missing some logic for Mac/Linux. Should come soon.
+> Works on windows and MacOS. Should work on Linux need to try it.
 
 ## Installation
 
