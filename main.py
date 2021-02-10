@@ -18,18 +18,19 @@ def main(directory, local, username, password, host, passive, output):
     x = input('Continue? y/n >')
     if x.lower() == 'y':
         # Create / recreate the local directory
-        if os.path.exists(local):
-            shutil.rmtree(local)
-            os.mkdir(local)
+        if os.path.exists(os.getcwd() + local):
+            shutil.rmtree(os.getcwd() + local)
+            os.mkdir(os.getcwd() + local)
         else:
-            os.mkdir(local)
+            os.mkdir(os.getcwd() + local)
+        os.chmod(os.getcwd() + local, 0o777)
 
         # Connect to FTP
         with ftplib.FTP(host) as ftp:
             try:
                 ftp.login(username, password)
                 ftp.set_pasv(passive)
-                recur(ftp, directory, str(os.getcwd() + "\\" + local), output)
+                recur(ftp, directory, str(os.getcwd() + local), output)
             except ftplib.error_perm:
                 print(
                     f'FTP login failed, Your username: {username} or password: {password} is incorrect.')
