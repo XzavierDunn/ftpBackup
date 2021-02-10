@@ -10,7 +10,7 @@
 
 ## Installation
 
-1. Get clone https://github.com/XzavierDunn/ftpBackup.git
+1. git clone https://github.com/XzavierDunn/ftpBackup.git
 2. python3 -m venv venv
 3. Activate venv => . ./venv/bin/activate/ or \venv\Scripts\Activate
 4. pip install -r requirements or pip install click
